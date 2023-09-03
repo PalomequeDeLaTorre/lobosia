@@ -8,6 +8,8 @@
 
   <title>lobosia</title>
 
+  <link rel="stylesheet" type="text/css" href="../styles.css">
+
  <style>
 
 body {
@@ -385,15 +387,21 @@ h1 {
 
 /* Estilos para la primera parte */
 .lineas-investigacion {
-    background-image: linear-gradient(#000E31, #00A788);
+    background-image: linear-gradient(#445347, #445347);
     padding: 20px;
     border-radius: 8px;
-    margin-top: 20px;
+    margin-top: 200px;
     margin: 20px;
+    margin-left: 20px; 
+    margin-right: 20px; 
+    
+
+    
+
 }
 
 .titulo-lineas {
-    color: #00A788;
+    color: #ffffff;
     font-size: 30px;
 }
 
@@ -456,23 +464,23 @@ h1 {
 @keyframes lightGlow {
    from {
        box-shadow:
-           inset -5px -5px rgba(17, 255, 156, 0.5),
-           inset -10px -10px rgba(17, 255, 156, 0.459),
-           inset -15px -15px rgba(17, 255, 156, 0.336),
-           inset -20px -20px rgba(17, 255, 156, 0.315),
-           inset -25px -25px rgba(17, 255, 156, 0.212),
-           inset -30px -30px rgba(17, 255, 156, 0.041);
+           inset -5px -5px rgba(255, 255, 255, 0.5),
+           inset -10px -10px rgba(255, 255, 255, 0.459),
+           inset -15px -15px rgba(255, 255, 255, 0.336),
+           inset -20px -20px rgba(255, 255, 255, 0.315),
+           inset -25px -25px rgba(255, 255, 255, 0.212),
+           inset -30px -30px rgba(255, 255, 255, 0.041);
    }
    
    to {
        box-shadow:
 
-       inset 5px 5px rgba(17, 255, 156, 0.5),
-           inset 10px 10px rgba(17, 255, 156, 0.459),
-           inset 15px 15px rgba(17, 255, 156, 0.336),
-           inset 20px 20px rgba(17, 255, 156, 0.315),
-           inset 25px 25px rgba(17, 255, 156, 0.212),
-           inset 30px 30px rgba(17, 255, 156, 0.041);
+       inset 5px 5px rgba(255, 255, 255, 0.5),
+           inset 10px 10px rgba(255, 255, 255, 0.459),
+           inset 15px 15px rgba(255, 255, 255, 0.336),
+           inset 20px 20px rgba(255, 255, 255, 0.315),
+           inset 25px 25px rgba(255, 255, 255, 0.212),
+           inset 30px 30px rgba(255, 255, 255, 0.041);
 
    }
 }
@@ -480,7 +488,7 @@ h1 {
 
 .cursos {
   
-    background-image: linear-gradient(#000E31, #00A788);
+    background-image: linear-gradient(#ffffff, #ffffff);
     padding: 20px;
     border-radius: 8px;
     margin-top: 220px; 
@@ -490,14 +498,14 @@ h1 {
 }
 
 .titulo-cursos {
-    color: #ffffff;
+    color: #000000;
     font-size: 40px;
 }
 
 .lista-cursos {
     list-style: disc;
     padding-left: 20px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .subtitulos {
@@ -514,6 +522,12 @@ h1 {
     max-width: 600px; 
 }
 
+  .imagen-p {
+  width: 400px;
+  height: auto; 
+}
+
+
 .subtitulos span {
     font-size: 18px;
     margin-top: 10px;
@@ -521,7 +535,7 @@ h1 {
 }
 
 .descripcion-subtitulos {
-    color: #ffffff;
+    color: #000000;
     margin-top: 5px;
     font-size: 12px;
     padding: 20px 0;
@@ -534,6 +548,47 @@ h1 {
     padding: 20px 0;
 }
 
+.fundadores {
+        background-image: linear-gradient(#ffffff, #ffffff);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .lista-integrantes {
+        right: -400px;
+    }
+
+    .lista-integrantes li{
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+        color: #000000;
+    }
+
+    .lista-integrantes img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+   
+    .titulo-fundadores {
+        padding: 4%;
+       
+    }
+
+    .Informacion {
+      color: #000000;
+    }
+
+  
+  
 
  </style>
 
@@ -632,7 +687,9 @@ h1 {
 
            </form>
 
-        </div>  
+        </div> 
+
+        
 
       </div>
       
@@ -670,7 +727,7 @@ h1 {
 
           <li class="subtitulos">
             <span>Python</span>
-              <img src="../Python.png" alt="Python">
+              <img src="../Python.png" alt="Python" class="Imagen-p">
               <p class="descripcion-subtitulos">Utilizado por startups y gigantes tecnológicos como Google, Facebook, 
                 Netflix y más, Python te ofrece infinitas posibilidades para crear proyectos de software pequeños y de gran envergadura. 
                 Amigable para el usuario con un código fácil de leer, Python es un excelente primer lenguaje de programación para aprender y no 
@@ -718,15 +775,22 @@ h1 {
     <ul class="lista-integrantes">
         <li class="fundador">
             Fundador
-            <p class="Informacion">Carlos</p>
+            <p class="Informacion">Carlos Palomeque de la Torre</p>
+            <img src="../Carlos.png" alt="Carlos">
+            <p class="cargo"></p>
+              
         </li>
-        <li class="representante">
+        <li class="fundador">
           Representante
-            <p class="informacion">Hector</p>
+            <p class="Informacion">Hector Saldaña Benitez</p>
+            <img src="../Hector.png" alt="Hector">
+            <p class="cargo"></p>
         </li>
         <li class="fundador">
             Fundador
-            <p class="Informacion">Mauro</p>
+            <p class="Informacion">Mauro Agustin Cervantes Garcia</p>
+            <img src="../Mauro.png" alt="Mauro">
+            <p class="cargo"></p>
         </li>
     </ul>
 </div>
