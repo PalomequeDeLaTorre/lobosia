@@ -47,6 +47,8 @@ body {
     .logo-right {
       right: 10px;
     }
+
+    
     
     .content-container {
       display: flex;
@@ -57,7 +59,7 @@ body {
       background-image: linear-gradient(#00A788,#000E31);
       border-radius: 8px;
       box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 25px; /* Agrega margen en la parte inferior */
+      margin-bottom: 25px; 
     }
     
     .form-container {
@@ -385,9 +387,10 @@ h1 {
   }
 }
 
-/* Estilos para la primera parte */
+/* Estilos lienas de investigacion */
+
 .lineas-investigacion {
-    background-image: linear-gradient(#445347, #445347);
+    background-image: linear-gradient(#000E31, #00A788);
     padding: 20px;
     border-radius: 8px;
     margin-top: 200px;
@@ -426,7 +429,8 @@ h1 {
     padding: 5px 0;
 }
 
-/* Estilos para la segunda parte */
+/* Estilos Imagen de alado */ 
+
 .imagen-lado {
     display: flex;
     align-items: flex-start;
@@ -464,31 +468,32 @@ h1 {
 @keyframes lightGlow {
    from {
        box-shadow:
-           inset -5px -5px rgba(255, 255, 255, 0.5),
-           inset -10px -10px rgba(255, 255, 255, 0.459),
-           inset -15px -15px rgba(255, 255, 255, 0.336),
-           inset -20px -20px rgba(255, 255, 255, 0.315),
-           inset -25px -25px rgba(255, 255, 255, 0.212),
-           inset -30px -30px rgba(255, 255, 255, 0.041);
+           inset -5px -5px rgba(0, 225, 255, 0.5),
+           inset -10px -10px rgba(0, 217, 255, 0.459),
+           inset -15px -15px rgba(0, 238, 255, 0.336),
+           inset -20px -20px rgba(0, 217, 255, 0.315),
+           inset -25px -25px rgba(0, 238, 255, 0.212),
+           inset -30px -30px rgba(0, 238, 255, 0.041);
    }
    
    to {
        box-shadow:
 
-       inset 5px 5px rgba(255, 255, 255, 0.5),
-           inset 10px 10px rgba(255, 255, 255, 0.459),
-           inset 15px 15px rgba(255, 255, 255, 0.336),
-           inset 20px 20px rgba(255, 255, 255, 0.315),
-           inset 25px 25px rgba(255, 255, 255, 0.212),
-           inset 30px 30px rgba(255, 255, 255, 0.041);
+       inset 5px 5px rgba(0, 238, 255, 0.5),
+           inset 10px 10px rgba(0, 217, 255, 0.459),
+           inset 15px 15px rgba(0, 247, 255, 0.336),
+           inset 20px 20px rgba(0, 238, 255, 0.315),
+           inset 25px 25px rgba(0, 225, 255, 0.212),
+           inset 30px 30px rgba(0, 247, 255, 0.041);
 
    }
 }
 
+/* Estilos de los cursos*/
 
 .cursos {
   
-    background-image: linear-gradient(#ffffff, #ffffff);
+    background-image: linear-gradient(#00A788,#000E31);
     padding: 20px;
     border-radius: 8px;
     margin-top: 220px; 
@@ -498,14 +503,14 @@ h1 {
 }
 
 .titulo-cursos {
-    color: #000000;
+    color: #ffffff;
     font-size: 40px;
 }
 
 .lista-cursos {
     list-style: disc;
     padding-left: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .subtitulos {
@@ -535,7 +540,7 @@ h1 {
 }
 
 .descripcion-subtitulos {
-    color: #000000;
+    color: #ffffff;
     margin-top: 5px;
     font-size: 12px;
     padding: 20px 0;
@@ -548,15 +553,18 @@ h1 {
     padding: 20px 0;
 }
 
+
+/* Estilos de la parte de fundadores */
+
 .fundadores {
-        background-image: linear-gradient(#ffffff, #ffffff);
+        background-image: linear-gradient(#000E31, #00A788);
         padding: 20px;
         border-radius: 8px;
         margin-top: 30px;
         margin-left: 20px;
         margin-right: 20px;
         text-align: center;
-        color: #000000;
+        color: #ffffff;
     }
 
     .lista-integrantes {
@@ -567,7 +575,7 @@ h1 {
         display: inline-block;
         margin-right: 20px;
         vertical-align: top;
-        color: #000000;
+        color: #ffffff;
     }
 
     .lista-integrantes img {
@@ -584,12 +592,12 @@ h1 {
     }
 
     .Informacion {
-      color: #000000;
+      color: #ffffff;
     }
-
-  
   
 
+
+    
  </style>
 
  </head>
@@ -616,6 +624,8 @@ h1 {
         ¡Esperamos contar con tu entusiasmo y activa participación!"</p>
 
     </div>
+
+
 
     <div class="form-container">
      
@@ -689,9 +699,9 @@ h1 {
 
         </div> 
 
-        
-
       </div>
+
+
       
       <div class="lineas-investigacion">
         <h3 class="titulo-lineas">LÍNEAS DE INVESTIGACIÓN:</h3>
@@ -712,6 +722,7 @@ h1 {
     <div class="imagen-lado">
         <img src="../IAIMAGE.jpg" alt="Imagen al lado" class="imagen">
     </div>
+
 
 
     <div class="cursos">
@@ -770,6 +781,8 @@ h1 {
       </ul>
   </div>
 
+
+
   <div class="fundadores">
     <h3 class="titulo-fundadores">Fundadores del taller</h3>
     <ul class="lista-integrantes">
@@ -794,6 +807,8 @@ h1 {
         </li>
     </ul>
 </div>
+
+
   
     </body>
 
