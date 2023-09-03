@@ -480,17 +480,18 @@ h1 {
 
 .cursos {
   
-  background-image: linear-gradient(#000E31, #00A788);
+    background-image: linear-gradient(#000E31, #00A788);
     padding: 20px;
     border-radius: 8px;
     margin-top: 220px; 
     margin-left: 20px; 
     margin-right: 20px; 
+    text-align: center;
 }
 
 .titulo-cursos {
-    color: #00A788;
-    font-size: 30px;
+    color: #ffffff;
+    font-size: 40px;
 }
 
 .lista-cursos {
@@ -501,18 +502,37 @@ h1 {
 
 .subtitulos {
     padding: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
     color: #fbff02;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.subtitulos img {
+    max-width: 600px; 
+}
+
+.subtitulos span {
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 20px;
 }
 
 .descripcion-subtitulos {
     color: #ffffff;
     margin-top: 5px;
     font-size: 12px;
-    padding: 60px 0;
+    padding: 20px 0;
 }
 
-
+.registro-cursos {
+    color: #fbff02;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px 0;
+}
 
 
  </style>
@@ -620,11 +640,11 @@ h1 {
         <h3 class="titulo-lineas">LÍNEAS DE INVESTIGACIÓN:</h3>
         <ul class="lista-lineas">
             <li class="linea">
-                FACIAL RECOGNITION
+                Reconocimiento facial
                 <p class="descripcion-linea">Usaremos IA para establecer un sistema de reconocimiento facial al ingresar a la Universidad.</p>
             </li>
             <li class="linea">
-                PLATES RECOGNITION
+              Reconocimiento de placas
                 <p class="descripcion-linea">Al igual que con el reconocimiento facial con IA usado como método de seguridad para ingresar a las instalaciones de la Universidad, lo implementaremos en el estacionamiento.</p>
             </li>
             <li class="linea">
@@ -638,42 +658,61 @@ h1 {
 
 
     <div class="cursos">
-        <h3 class="titulo-cursos">CURSOS:</h3>
-        <ul class="lista-cursos">
-            <li class="subtitulos">
-                PYTHON
+      <h3 class="titulo-cursos">CURSOS</h3>
+      <ul class="lista-cursos">
+          <li class="subtitulos">
+            <span>Python Essentials 1</span>
+              <img src="../Python Essentials 1.jpg" alt="PythonEs">
+              <p class="descripcion-subtitulos">Aprende conceptos fundamentales de programación informática y comienza a desarrollar 
+                habilidades de codificación con el lenguaje de programación Python.</p>
               
-            </li>
-            <li class="subtitulos">
-                DATA SCIENCE
-                
-            </li>
-            <li class="subtitulos">
-                DATA ANALYLICS
-                <p class="descripcion-subtitulos">Al registrarse como miembros del taller de Lobos IA, tendrán derecho a cursar varios cursos estos
-                  totalmente gratis</p>
-                  
-            </li>
-        </ul>
-    </div>
-    <div class="imagen-curso">
-        <img src="" alt="Imagen del curso" class="imagenc">
-    </div>
+          </li>
 
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          const form = document.getElementById('registration-form');
-    
-          form.addEventListener('submit', function (event) {
-            event.preventDefault(); 
-    
-            
-            window.location.href = 'https://graciasporregistrarte.onrender.com';
-    
-          });
-        });
-      </script>
+          <li class="subtitulos">
+            <span>Python</span>
+              <img src="../Python.png" alt="Python">
+              <p class="descripcion-subtitulos">Utilizado por startups y gigantes tecnológicos como Google, Facebook, 
+                Netflix y más, Python te ofrece infinitas posibilidades para crear proyectos de software pequeños y de gran envergadura. 
+                Amigable para el usuario con un código fácil de leer, Python es un excelente primer lenguaje de programación para aprender y no 
+                requiere conocimientos previos de programación. Las habilidades en Python te abren oportunidades en casi cualquier industria y son necesarias 
+                si deseas avanzar hacia roles más avanzados y mejor remunerados en desarrollo de software e ingeniería, como ingeniero de software, administrador de 
+                sistemas e ingeniero de seguridad. En este curso, aprenderás habilidades en demanda, como cómo diseñar, desarrollar y mejorar programas informáticos, métodos 
+                para analizar problemas utilizando la programación, mejores prácticas de programación y más. El curso también te prepara para la certificación PCEP - Programador Python 
+                de Nivel de Entrada Certificado (Examen PCEP-30-0x). Desarrollado en colaboración con el Instituto Python OpenEDG.</p>
+              
+          </li>
 
+          <li class="subtitulos">
+            <span>Introduction to Data Science</span>
+              <img src="../Introduction to Data Science.jpg" alt="Data Science">
+              <p class="descripcion-subtitulos">¡Se crean quintillones de bytes de datos TODOS los días! 
+                Explora cómo los datos están transformando el mundo y abriendo emocionantes nuevos empleos. 
+                Este curso introductorio te adentra en el mundo de la ciencia de datos. Aprenderás los conceptos 
+                básicos de la ciencia de datos, la analítica de datos y la ingeniería de datos para comprender cómo 
+                el aprendizaje automático está moldeando el futuro de los negocios, la atención médica, la educación y más. 
+                Los profesionales de la ciencia de datos que pueden proporcionar ideas accionables para decisiones basadas en datos 
+                están en alta demanda en todo el mundo.</p>
+              
+          </li>
+          <li class="subtitulos">
+            <span>Data Analytics Essentials</span>
+              <img src="../Data Analytics Essentials.jpg" alt="Data Analytics">
+              <p class="descripcion-subtitulos">
+                Las organizaciones de todo el mundo reconocen el valor de la analítica. 
+                Aprende las herramientas esenciales del oficio. Este curso de fundamentos de 
+                la analítica de datos te enseña las herramientas fundamentales de un analista de datos. 
+                Aprenderás a transformar, organizar y visualizar datos con herramientas de hojas de cálculo 
+                como Excel. También aprenderás cómo consultar datos de una base de datos relacional utilizando 
+                SQL y cómo mejorar tus presentaciones de datos utilizando potentes herramientas de inteligencia empresarial 
+                como Tableau. Al final del curso, tendrás un portafolio de analítica completo con un análisis del conjunto de datos 
+                de películas populares, que muestra tus habilidades en Excel, SQL y Tableau.</p>
+
+                <p class="registro-cursos">Al inscribirse como miembros del Taller de Lobos IA, se les concede el privilegio de acceder a todos estos cursos completamente gratis.</p>
+              
+          </li>
+      </ul>
+  </div>
+  
     </body>
 
 </html>
