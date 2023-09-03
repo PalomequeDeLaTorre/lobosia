@@ -399,7 +399,6 @@ h1 {
     margin-right: 20px; 
     
 
-    
 
 }
 
@@ -416,9 +415,14 @@ h1 {
 }
 
 .linea {
+
     padding: 10px 0;
-    font-size: 25px;
+    font-size: 30px;
     color: #fbff02;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
     
 }
 
@@ -427,6 +431,9 @@ h1 {
     margin-top: 5px;
     font-size: 12px;
     padding: 5px 0;
+    text-align: justify;
+    font-weight: bold;
+
 }
 
 /* Estilos Imagen de alado */ 
@@ -500,11 +507,14 @@ h1 {
     margin-left: 20px; 
     margin-right: 20px; 
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 .titulo-cursos {
     color: #ffffff;
     font-size: 40px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .lista-cursos {
@@ -534,9 +544,11 @@ h1 {
 
 
 .subtitulos span {
-    font-size: 18px;
+    font-size: 30px;
     margin-top: 10px;
     padding: 20px;
+    color: #fbff02;
+    font-weight: bold;
 }
 
 .descripcion-subtitulos {
@@ -544,6 +556,10 @@ h1 {
     margin-top: 5px;
     font-size: 12px;
     padding: 20px 0;
+    text-align: justify;
+    font-weight: bold;
+    
+
 }
 
 .registro-cursos {
@@ -551,6 +567,7 @@ h1 {
     margin-top: 5px;
     font-size: 20px;
     padding: 20px 0;
+    font-weight: bold;
 }
 
 
@@ -565,6 +582,9 @@ h1 {
         margin-right: 20px;
         text-align: center;
         color: #ffffff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+
     }
 
     .lista-integrantes {
@@ -594,6 +614,13 @@ h1 {
     .Informacion {
       color: #ffffff;
     }
+
+    .cargo {
+    position: relative;
+    left: 10px;
+    font-size: 12px;
+}
+
   
 
 
@@ -618,7 +645,8 @@ h1 {
 
     <div class="video-container">
 
-      <video width="100%" height="300" controls loop><source src="../prototipoIa.mp4" type="video/mp4"></video>
+      <video width="100%" height="300" controls loop>
+        <source src="../prototipoIa.mp4" type="video/mp4"></video>
     
       <p>"Extendemos una cordial invitación a todos los estudiantes de la Universidad Tecnológica de San Juan del Río interesados en participar en este taller. 
         ¡Esperamos contar con tu entusiasmo y activa participación!"</p>
@@ -707,15 +735,17 @@ h1 {
         <h3 class="titulo-lineas">LÍNEAS DE INVESTIGACIÓN:</h3>
         <ul class="lista-lineas">
             <li class="linea">
-                Reconocimiento facial
+                <span>Reconocimiento facial</span>
                 <p class="descripcion-linea">Usaremos IA para establecer un sistema de reconocimiento facial al ingresar a la Universidad.</p>
             </li>
+
             <li class="linea">
-              Reconocimiento de placas
+              <span>Reconocimiento de placas</span>
                 <p class="descripcion-linea">Al igual que con el reconocimiento facial con IA usado como método de seguridad para ingresar a las instalaciones de la Universidad, lo implementaremos en el estacionamiento.</p>
             </li>
+
             <li class="linea">
-                CHATBOT FOR UTSJR.COM
+                <span>CHATBOT FOR UTSJR.COM</span>
             </li>
         </ul>
     </div>

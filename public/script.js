@@ -15,7 +15,7 @@ document.getElementById('registrationForm').addEventListener('submit', async (ev
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ nombre, apellidos, numero_de_expediente, carrera, cuatrimestre, telefono, nivel }) });
-  
+
     const data = await response.json();
     alert(data.message);
   });
